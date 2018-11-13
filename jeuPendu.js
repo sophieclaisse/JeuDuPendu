@@ -40,23 +40,28 @@ motCache();
 //ECOUTE DU JOUEUR
 document.getElementById("OK").addEventListener("click", function(){
 var lettreU= document.getElementById("lettre").value;
-console.log(lettreU);
+
 lettreU= lettreU.toLowerCase();
 
-var placeL= randomMot.indexOf(lettreU);
-console.log(placeL);
+/*var placeL= randomMot.indexOf(lettreU);
+console.log(placeL);*/
 
 
 //AFFICHAGE REPONSE UTILISATEUR VRAI/FAUX
 var x=0;
 
+/*if (placeL==-1){
+    alert("Loupé");
+    scoreU();
+}*/
 
 for (var i=0; i<randomMot.length; i++) {
 
-    if (lettreU== randomMot[i]) {
-        document.getElementById("L"+i).innerHTML = lettreU;
+    if (lettreU == randomMot[i]) {
+        document.getElementById("L" + i).innerHTML = lettreU;
         x++;
         win++;
+        document.getElementById("lettre").value= "";
     }
 
 }
@@ -64,7 +69,6 @@ for (var i=0; i<randomMot.length; i++) {
     if (x==0) {
         alert("Loupé");
         scoreU();
-
     }
 
     if (win==randomMot.length){
@@ -74,7 +78,7 @@ for (var i=0; i<randomMot.length; i++) {
         document.getElementById("essais").innerHTML= "Il vous reste "+ score + " essais.";
         lancerJeu();
         motCache();
-
+        document.getElementById("lettre").value= "";
     }
 
 });
@@ -96,7 +100,7 @@ function scoreU (){
         document.getElementById("essais").innerHTML= "Il vous reste "+ score + " essais.";
         lancerJeu();
         motCache();
-        document.getElementById("lettre").value= " ";
+        document.getElementById("lettre").value= "";
     }
 }
 
