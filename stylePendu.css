@@ -1,0 +1,44 @@
+h1, h2{
+    text-align: center;
+    color: darkcyan;
+}
+
+H2{
+    margin-top: 100px;
+}
+
+#choixU {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+#lettre {
+    width: 300px;
+    height: 50px;
+}
+
+#OK{
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+
+#indication{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    color: darkcyan;
+}
+
+#reponse{
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+}
+
+#essais {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    color: darkcyan;
+}
