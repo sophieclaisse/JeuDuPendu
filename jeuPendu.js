@@ -1,4 +1,4 @@
-var texte= ["maison" ,"enfant", "tortue", "vipere", "rallye", "citron", "fraise", "gramme", "majeur", "livres", "menhir", "pauvre", "record", "soiree", "typhon", "nymphe", "flipper","baseball"," definition", "dictionnaire", "tomber", "virement", "signature","abracadabra", "marionnette"];
+var texte= ["maison" ,"enfant", "tortue", "vipere", "rallye", "citron", "fraise", "gramme", "majeur", "livres", "menhir", "pauvre", "record", "soiree", "typhon", "nymphe", "flipper","baseball","definition", "dictionnaire", "tomber", "virement", "signature","abracadabra", "marionnette"];
 
 var user= [];
 
@@ -72,10 +72,10 @@ for (var i=0; i<randomMot.length; i++) {
         if (!TabU()) {
             document.getElementById("L" + i).innerHTML = lettreU;
             x++;
-            win++;
             document.getElementById("lettre").value = "";
             user[i] = lettreU;
         }
+        win++;
     }
 
 
